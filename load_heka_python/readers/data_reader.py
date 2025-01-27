@@ -207,8 +207,7 @@ def check_sweep_params_are_equal(pul, group_idx, series_idx, rec_idx, param_key)
         group_idx, series_idx, param_key, rec_idx), UserWarning)
         print("Continuing execution...")
 
-    """
-    assert all_equal, "Group: {0}, Series: {1} {2} parameters are not the same for all sweeps, records: {3}".format(
-        group_idx, series_idx, param_key, rec_idx
-    )
-    """
+    # assert all_equal, "Group: {0}, Series: {1} {2} parameters are not the same for all sweeps, records: {3}".format(
+    #    group_idx, series_idx, param_key, rec_idx
+    #)
+
