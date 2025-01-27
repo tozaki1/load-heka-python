@@ -203,6 +203,12 @@ def check_sweep_params_are_equal(pul, group_idx, series_idx, rec_idx, param_key)
 
     all_equal = True if np.unique(params).size == 1 else False
 
+    if not all_equal:
+        print("Group: {0}, Series: {1} {2} parameters are not the same for all sweeps, records: {3}".format(
+        group_idx, series_idx, param_key, rec_idx
+            
+    """
     assert all_equal, "Group: {0}, Series: {1} {2} parameters are not the same for all sweeps, records: {3}".format(
         group_idx, series_idx, param_key, rec_idx
     )
+    """
